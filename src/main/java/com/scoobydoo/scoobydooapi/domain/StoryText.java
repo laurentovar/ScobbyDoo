@@ -1,4 +1,4 @@
-package domain;
+package com.scoobydoo.scoobydooapi.domain;
 
 import lombok.Data;
 

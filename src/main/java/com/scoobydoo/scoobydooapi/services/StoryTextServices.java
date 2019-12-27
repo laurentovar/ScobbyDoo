@@ -1,14 +1,10 @@
-package services;
+package com.scoobydoo.scoobydooapi.services;
 
-import domain.StoryText;
-import org.springframework.stereotype.Service;
+import com.scoobydoo.scoobydooapi.domain.StoryText;
 
 import java.util.List;
 
-@Service
 public interface StoryTextServices {
-    //methods
-
     StoryText findStoryTextById (Long id);
 
     List<StoryText> findAllStoryText();

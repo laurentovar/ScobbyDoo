@@ -1,12 +1,13 @@
-package services;
+package com.scoobydoo.scoobydooapi.services;
 
-import domain.StoryText;
-import repositories.StoryTextRepository;
+import com.scoobydoo.scoobydooapi.domain.StoryText;
+import com.scoobydoo.scoobydooapi.repositories.StoryTextRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class StoryTextServicesImpl implements StoryTextServices {
-
     private final StoryTextRepository storyTextRepository;
 
     public StoryTextServicesImpl(StoryTextRepository storyTextRepository) {
@@ -27,6 +28,4 @@ public class StoryTextServicesImpl implements StoryTextServices {
     public StoryText saveStoryText(StoryText storyText) {
         return storyTextRepository.save(storyText);
     }
-
-
 }
