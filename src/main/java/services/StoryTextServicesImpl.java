@@ -15,11 +15,18 @@ public class StoryTextServicesImpl implements StoryTextServices {
 
     @Override
     public StoryText findStoryTextById(Long id) {
-        return storyTextRepository.getOne(id);
+        return storyTextRepository.findById(id).get();
     }
 
     @Override
     public List<StoryText> findAllStoryText() {
         return storyTextRepository.findAll();
     }
+
+    @Override
+    public StoryText saveStoryText(StoryText storyText) {
+        return storyTextRepository.save(storyText);
+    }
+
+
 }
