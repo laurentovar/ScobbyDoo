@@ -28,4 +28,9 @@ public class StoryTextServicesImpl implements StoryTextServices {
     public StoryText saveStoryText(StoryText storyText) {
         return storyTextRepository.save(storyText);
     }
+
+    @Override
+    public List<StoryText> findByStoryText(String text) {
+        return storyTextRepository.searchByTitleLike(text);
+    }
 }

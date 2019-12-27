@@ -10,4 +10,6 @@ public interface StoryTextServices {
     List<StoryText> findAllStoryText();
 
     StoryText saveStoryText(StoryText storyText);
+
+    List<StoryText> findByStoryText(String text);
 }

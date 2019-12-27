@@ -36,4 +36,10 @@ public class StoryTextController {
         System.out.println("Test");
         return storyTextServices.saveStoryText(storyText);
     }
+
+    @GetMapping("/text={text}")
+    public List<StoryText> getStoryByText(@PathVariable String text){
+        return storyTextServices.findByStoryText(text);
+    }
+
 }
