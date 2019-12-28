@@ -15,7 +15,11 @@ public class StoryText {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String text;
-    private String picUrl;
+    private Integer picUrl;
+    private int option1;
+    private int option2;
+    private int option3;
+    private int option4;
 
 
 }
