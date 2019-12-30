@@ -16,10 +16,10 @@ public class StoryText {
     private Long id;
     private String text;
     private Integer picUrl;
-    private int option1;
-    private int option2;
-    private int option3;
-    private int option4;
+    private Integer option1;
+    private Integer option2;
+    private Integer option3;
+    private Integer option4;
 
 
 }
