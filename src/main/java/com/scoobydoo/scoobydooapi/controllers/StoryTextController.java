@@ -7,6 +7,7 @@ import com.scoobydoo.scoobydooapi.services.StoryTextServices;
 
 import java.util.List;
 
+@CrossOrigin
 @RestController
 @RequestMapping(StoryTextController.BASE_URL)
 public class StoryTextController {
