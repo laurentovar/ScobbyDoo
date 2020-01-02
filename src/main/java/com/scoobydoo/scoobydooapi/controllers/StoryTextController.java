@@ -24,6 +24,7 @@ public class StoryTextController {
     List<StoryText> getAllStoryText(){
         return storyTextServices.findAllStoryText();
     }
+    
     //find through the id
     @GetMapping("/{id}")
     public StoryText getStoryTextById(@PathVariable Long id){
